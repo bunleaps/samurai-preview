@@ -12,7 +12,7 @@ function TrustedPartners() {
   return (
     <div className="py-16 bg-[#192230bf] flex flex-col items-center gap-4">
       <TitleLine title="Ecosystem Partners" />
-      <h1 className="text-3xl font-bold tracking-wider">
+      <h1 className="text-3xl font-bold tracking-wide">
         Trusted By Ecosystem Partners
       </h1>
       <p className="w-1/3 text-sm text-center">
