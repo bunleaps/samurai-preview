@@ -10,7 +10,7 @@ function Hero() {
         autoPlay
         muted
       ></video>
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="bg-gradient-to-b from-transparent to-secondary absolute inset-0 flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-5xl font-bold">Great Software Works Great,</h1>
           <h1 className="text-5xl font-bold shadow bg-gradient-to-r from-cyan-500 to-blue-700 bg-clip-text text-transparent p-2">

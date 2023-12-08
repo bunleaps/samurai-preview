@@ -1,37 +1,37 @@
 import React from "react";
 import TitleLine from "@/components/title_line";
 import IconCard from "@/components/icon_card";
-import { MdSecurity } from "react-icons/md";
-import { AiFillSafetyCertificate } from "react-icons/ai";
-import { IoBugSharp } from "react-icons/io5";
+import { MdOutlineBiotech } from "react-icons/md";
+import { MdHealthAndSafety } from "react-icons/md";
+import { GiOilPump } from "react-icons/gi";
 
-function WhyUs() {
+function IndustriesInfo() {
   const cardsInfo = [
     {
-      title: "Privacy Protection",
+      title: "High Tech",
       description:
-        "Solve emerging workforce needs with headsets that combine commercial quality with consumer design.",
-      icon: <MdSecurity />,
+        "That's what drives us as a custom software design and development company",
+      icon: <MdOutlineBiotech />,
     },
     {
-      title: "Secure Network",
+      title: "Healthcare",
       description:
-        "Solve emerging workforce needs with headsets that combine commercial quality with consumer design.",
-      icon: <AiFillSafetyCertificate />,
+        "That's what drives us as a custom software design and development company",
+      icon: <MdHealthAndSafety />,
     },
     {
-      title: "Malware & Virus Protection",
+      title: "Oil & Gas",
       description:
-        "Solve emerging workforce needs with headsets that combine commercial quality with consumer design.",
-      icon: <IoBugSharp />,
+        "That's what drives us as a custom software design and development company",
+      icon: <GiOilPump />,
     },
   ];
 
   return (
     <div className="mt-28 mb-16 flex flex-col items-center gap-4">
-      <TitleLine title="Why Choose Us" />
+      <TitleLine title="Industries" />
       <h1 className="text-3xl font-bold tracking-wide">
-        We Advise More Than 1700 Companies
+        Providing Cyber Security to Help
       </h1>
       <p className="w-1/3 text-sm text-center">
         Source Point Delivers Next Generation Technology Services Designed To
@@ -52,4 +52,4 @@ function WhyUs() {
   );
 }
 
-export default WhyUs;
+export default IndustriesInfo;

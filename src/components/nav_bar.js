@@ -19,10 +19,19 @@ function Navbar() {
       </div>
       <nav className="flex justify-center backdrop-blur-xl shadow">
         <div className="w-3/4 py-4 flex justify-between items-center">
-          <Image src="logo.svg" alt="SamurAi Logo" width={165} height={52} />
+          <Image
+            src="logo.svg"
+            alt="SamurAi Logo"
+            width={165}
+            height={52}
+            priority={true}
+          />
           <ul className="flex items-center gap-12 tracking-wide">
             {navigation.map((nav) => (
-              <li key={nav} className="cursor-pointer">
+              <li
+                key={nav}
+                className="cursor-pointer hover:border-b-4 hover:border-primary"
+              >
                 {nav}
               </li>
             ))}
