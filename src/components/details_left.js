@@ -801,4 +801,29 @@ function DetailsLeftReadMore({
   );
 }
 
-export { DetailsLeftContact, DetailsLeftReadMore };
+function DetailsLeft({ image, title, header, description }) {
+  return (
+    <div className="my-48 w-full flex gap-16">
+      <div className="w-1/2">
+        <TitleLine title={title} />
+        <h1 className="text-3xl font-semibold mt-2">{header}</h1>
+        <p className="text-sm mt-2">{description}</p>
+      </div>
+      <div className="w-1/2">
+        <div className="relative w-full h-full">
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="ml-44 w-[350px] h-[350px] rounded-full border border-gray-600 border-dashed"></div>
+          </div>
+          <div className="absolute inset-0 flex justify-start items-center">
+            <div className="ml-56 w-[250px] h-[250px] rounded-full border border-gray-600 border-dashed"></div>
+          </div>
+          <div className="absolute inset-0 flex justify-start items-center">
+            <Image src={image} alt="header" width={400} height={270} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export { DetailsLeftContact, DetailsLeftReadMore, DetailsLeft };

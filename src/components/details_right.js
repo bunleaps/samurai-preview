@@ -801,4 +801,29 @@ function DetailsRightReadMore({
   );
 }
 
-export { DetailsRightContact, DetailsRightReadMore };
+function DetailsRight({ image, title, header, description }) {
+  return (
+    <div className="my-28 w-full flex gap-16">
+      <div className="w-1/2">
+        <div className="relative w-full h-full">
+          <div className="absolute inset-0 flex justify-end items-center">
+            <div className="mr-44 w-[350px] h-[350px] rounded-full border border-gray-600 border-dashed"></div>
+          </div>
+          <div className="absolute inset-0 flex justify-end items-center">
+            <div className="mr-56 w-[250px] h-[250px] rounded-full border border-gray-600 border-dashed"></div>
+          </div>
+          <div className="absolute inset-0 flex justify-end items-center">
+            <Image src={image} alt="header" width={400} height={270} />
+          </div>
+        </div>
+      </div>
+      <div className="w-1/2">
+        <TitleLine title={title} />
+        <h1 className="text-3xl font-semibold mt-2">{header}</h1>
+        <p className="text-sm mt-2">{description}</p>
+      </div>
+    </div>
+  );
+}
+
+export { DetailsRightContact, DetailsRightReadMore, DetailsRight };

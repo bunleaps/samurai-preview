@@ -7,6 +7,7 @@ function TrustedPartners() {
     { name: "iTernity", src: "/iTernity.svg", width: 180, height: 40 },
     { name: "Zscaler", src: "/Zscaler.svg", width: 180, height: 40 },
     { name: "Dilato", src: "/Dilato.svg", width: 180, height: 40 },
+    { name: "Palo Alto Network", src: "/PAN.svg", width: 180, height: 40 },
   ];
 
   return (

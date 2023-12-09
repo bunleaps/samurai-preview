@@ -13,14 +13,14 @@ function Solutions() {
   ];
 
   return (
-    <div className="relative w-full h-[500px]">
+    <div className="relative w-full h-[500px] bg-gradient-to-b from-secondary from-10% via-transparent via-30% to-secondary to-90%">
       <Image
         className="object-cover transform -scale-x-100 brightness-50 blur-sm"
         src="/bg/bg_101.png"
         alt="bg cover"
         fill
       />
-      <div className="z-10 absolute inset-0 flex justify-center items-center">
+      <div className="z-10 absolute inset-0 flex justify-center items-center ">
         <div className="w-3/5 flex">
           <div className="w-1/2 flex items-center">
             <div>
